@@ -1,0 +1,118 @@
+.register-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.left-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #fff;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+
+  @media (max-width: 768px) {
+    padding: 80px;
+  }
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-container p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkowanie elementów w poziomie */
+}
+
+form,
+.register-form {
+  margin-top: 30px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.switch-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.switch-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
