@@ -1,0 +1,4 @@
+<div *ngIf="loaderService.getLoading()" class="loader">
+  <mat-spinner [strokeWidth]="5" [diameter]="50"></mat-spinner>
+  <span style="margin-left: 10px">{{ loaderText }}</span>
+</div>
